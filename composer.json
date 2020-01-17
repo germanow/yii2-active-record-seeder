@@ -1,0 +1,17 @@
+{
+    "name": "germanow/yii2-active-record-seeder",
+    "description": "Seeds database with test or default values.",
+    "type": "library",
+    "require": {
+        "yiisoft/yii2": "2.0.*",
+        "la-haute-societe/yii2-save-relations-behavior": "^1.7"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Hermanov",
+            "email": "ivan.hermanov@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
