@@ -1,6 +1,6 @@
 <?php
 
-namespace app\components\utils\ActiveRecordSeeder;
+namespace germanow\yii2ActiveRecordSeeder;
 
 /**
  * AddFiller
