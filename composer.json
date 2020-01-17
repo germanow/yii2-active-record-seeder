@@ -13,5 +13,20 @@
             "email": "ivan.hermanov@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "lhs\\Yii2SaveRelationsBehavior\\": "src/"
+        }
+    },
+    "config": {
+        "process-timeout": 1800,
+        "preferred-install": "dist"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }
