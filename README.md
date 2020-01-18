@@ -7,6 +7,13 @@ Seeds database with test or default values.
 - Seeds tables with different strategy using filler classes
 - Support relations
 
+# Installation
+
+Run command:
+```
+$ composer require germanow/yii2-active-record-seeder
+```
+
 # Usage
 
 Create ActiveRecordSeeder, configure fillers, call `fill` method:
