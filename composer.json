@@ -2,7 +2,7 @@
     "name": "germanow/yii2-active-record-seeder",
     "description": "Seeds database with test or default values.",
     "type": "library",
-    "keywords": ["yii2","db", "seeding"],
+    "keywords": ["yii2", "db", "active record", "seeding"],
     "homepage": "https://github.com/germanow/yii2-active-record-seeder",
     "require": {
         "yiisoft/yii2": "2.0.*",
@@ -19,7 +19,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "lhs\\Yii2SaveRelationsBehavior\\": "src/"
+            "germanow\\yii2ActiveRecordSeeder\\": "src/"
         }
     },
     "config": {
