@@ -8,8 +8,7 @@ use lhs\Yii2SaveRelationsBehavior\SaveRelationsBehavior;
 /**
  * AbstractFiller
  *
- * @author Ivan Hermanov <ivan.hermanov@quartsoft.com>
- * @package app\components\utils
+ * @author Ivan Hermanov <ivan.hermanov@gmail.com>
  */
 abstract class AbstractFiller extends BaseObject implements FillerInterface
 {

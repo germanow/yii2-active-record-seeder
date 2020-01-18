@@ -7,8 +7,7 @@ namespace germanow\yii2ActiveRecordSeeder;
  *
  * Delete all records and fill table.
  *
- * @author Ivan Hermanov <ivan.hermanov@quartsoft.com>
- * @package app\components\utils
+ * @author Ivan Hermanov <ivan.hermanov@gmail.com>
  */
 final class OverwriteFiller extends AbstractFiller
 {

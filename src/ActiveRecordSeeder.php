@@ -11,8 +11,7 @@ use Yii;
  * Fill database with records.
  * Filling strategy depends on filler class.
  *
- * @author Ivan Hermanov <ivan.hermanov@quartsoft.com>
- * @package app\components\utils
+ * @author Ivan Hermanov <ivan.hermanov@gmail.com>
  */
 class ActiveRecordSeeder extends BaseObject
 {

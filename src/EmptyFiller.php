@@ -7,8 +7,7 @@ namespace germanow\yii2ActiveRecordSeeder;
  *
  * Fill table if it's empty.
  *
- * @author Ivan Hermanov <ivan.hermanov@quartsoft.com>
- * @package app\components\utils
+ * @author Ivan Hermanov <ivan.hermanov@gmail.com>
  */
 final class EmptyFiller extends AbstractFiller
 {

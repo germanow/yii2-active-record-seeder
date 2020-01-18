@@ -7,8 +7,7 @@ namespace germanow\yii2ActiveRecordSeeder;
  *
  * Add records if they not exists in table with such id or attributes.
  *
- * @author Ivan Hermanov <ivan.hermanov@quartsoft.com>
- * @package app\components\utils
+ * @author Ivan Hermanov <ivan.hermanov@gmail.com>
  */
 final class AddFiller extends AbstractFiller
 {
