@@ -12,6 +12,10 @@ Seeds database with test or default values.
 Create ActiveRecordSeeder, configure fillers, call `fill` method:
 
 ```php
+use germanow\yii2ActiveRecordSeeder\ActiveRecordSeeder;
+use germanow\yii2ActiveRecordSeeder\AddFiller;
+use germanow\yii2ActiveRecordSeeder\OverwriteFiller;
+
 $seeder = new ActiveRecordSeeder([
     'fillers' => [
         // Default filler is EmptyFiller, which fill table if it's empty
@@ -37,7 +41,7 @@ $seeder = new ActiveRecordSeeder([
                     // Fill relations
                     'translations' => [
                         [
-                            'name' => 'Качество плохо',
+                            'name' => 'Низкое качество',
                             'languageId' => '5',
                         ],
                     ],
