@@ -20,7 +20,9 @@ class ActiveRecordSeeder extends BaseObject
      */
     public $defaultFillerClass;
     /**
-     * @var FillerInterface[]
+     * Fillers or configs of fillers
+     *
+     * @var FillerInterface[]|array
      */
     public $fillers = [];
 
@@ -43,10 +45,14 @@ class ActiveRecordSeeder extends BaseObject
     public function fill()
     {
         foreach ($this->fillers as $config) {
-            if (!isset($config['class'])) {
-                $config['class'] = $this->defaultFillerClass;
+            if ($config instanceof FillerInterface) {
+                $filler = $config;
+            } elseif (is_array($config)) {
+                if (!isset($config['class'])) {
+                    $config['class'] = $this->defaultFillerClass;
+                }
+                $filler = Yii::createObject($config);
             }
-            $filler = Yii::createObject($config);
             $filler->fill();
         }
     }
