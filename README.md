@@ -28,27 +28,27 @@ $seeder = new ActiveRecordSeeder([
         // Default filler is EmptyFiller, which fill table if it's empty
         [
             // Specify name of ActiveRecord model class
-            'recordClass' => VehicleEventType::class,
+            'recordClass' => EventType::class,
             'data' => [
                 [
                     'id' => 1,
-                    'canonicalName' => 'Low quality',
+                    'name' => 'Birthday',
                 ],
             ],
         ],
         // OverwriteFiller delete all records before filling
         [
             'class' => OverwriteFiller::class,
-            'recordClass' => VehicleEventType::class,
+            'recordClass' => EventType::class,
             'data' => [
                 [
                     'id' => 1,
-                    'canonicalName' => 'Low quality',
+                    'canonicalName' => 'Birthday',
                     'class' => 'lulz',
                     // Fill relations
                     'translations' => [
                         [
-                            'name' => 'Низкое качество',
+                            'name' => 'День рождения',
                             'languageId' => '5',
                         ],
                     ],
@@ -58,16 +58,16 @@ $seeder = new ActiveRecordSeeder([
         // AddFiller add records if they not exists in table with such id or attributes.
         [
             'class' => AddFiller::class,
-            'recordClass' => VehicleEventType::class,
+            'recordClass' => EventType::class,
             'data' => [
                 // check exists by id
                 [
                     'id' => 1,
-                    'canonicalName' => 'Low quality',
+                    'name' => 'Birthday',
                 ],
                 // check exists by canonicalName
                 [
-                    'canonicalName' => 'High quality',
+                    'name' => 'Meeting',
                 ],
             ],
         ],
