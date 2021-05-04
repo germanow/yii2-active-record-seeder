@@ -78,4 +78,4 @@ $seeder->fill();
 
 # Why
 
-I wrote this package for filling system tables, which must always be filled, such as `VehicleEventType`, `VehicleEventStatus` and other. Existing solutions, such as [yii2-db-seeder](https://github.com/tebazil/yii2-db-seeder), don't support filling strategy.
+I wrote this package for filling system tables, which must always be filled, such as `EventType`, `EventStatus` and other. Existing solutions, such as [yii2-db-seeder](https://github.com/tebazil/yii2-db-seeder), don't support filling strategy.
